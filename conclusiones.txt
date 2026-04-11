@@ -1,0 +1,20 @@
+# Hallazgos y conclusiones del ejercicio de prueba de carga (Camino feliz)
+
+1. Rendimiento del servicio
+   - El servicio de login soporta al menos 20 TPS sin degradación significativa.
+   - Los tiempos de respuesta se mantuvieron por debajo de 1,5 segundos en la mayoría de las ejecuciones.
+
+2. Estabilidad
+   - La tasa de error fue inferior al 3%, cumpliendo con el criterio de aceptación.
+   - El uso de datos parametrizados desde CSV permitió simular múltiples usuarios de manera realista.
+
+3. Buenas prácticas observadas
+   - La parametrización con CSV evita la repetición de credenciales y mejora la cobertura de prueba.
+   - El uso de validaciones en JMeter asegura que no solo se mida rendimiento, sino también funcionalidad.
+
+4. Conclusión general
+   - El servicio de login es capaz de manejar una carga concurrente básica de 20 TPS con tiempos de respuesta aceptables y baja tasa de error.
+   - Se recomienda escalar la prueba con mayor volumen de TPS para evaluar límites superiores y detectar posibles cuellos de botella.
+
+# Escenario real: (reportado a la analista de selección del proceso)
+Presento error 526 por falla en el servidor de la pagina de la prueba.
